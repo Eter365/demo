@@ -287,18 +287,18 @@
   14
   ```
 
-####cmake中如何生成动态库和静态库
+#### cmake中如何生成动态库和静态库
 参考ADD\_LIBRARY和SET\_TARGET\_PROPERTIES用法
 t3示例
 
-####cmake中如何使用动态库和静态库（查找库的路径）
+#### cmake中如何使用动态库和静态库（查找库的路径）
 参考INCLUDE\_DIRECTORIES, LINK\_DIRECTORIES, TARGET\_LINK\_LIBRARIES用法
 t4示例使用动态库或静态库
 t5示例如何使用cmake预定义的cmake模块(以FindCURL.cmake为例演示)
 t6示例如何使用自定义的cmake模块(编写了自定义的FindHELLO.cmake)
 **注意**读t5和t6的CMakeLists.txt和FindHELLO.cmake中的注释部分
 
-####cmake中如何指定生成文件的输出路径
+#### cmake中如何指定生成文件的输出路径
   * 如上ADD\_SUBDIRECTORY的时候指定目标二进制文件输出路径（推荐使用下面这种）
   * 使用SET命令重新定义EXECUTABLE\_OUTPUT\_PATH和LIBRARY\_OUTPUT\_PATH变量来指定最终的二进制文件的位置
   ```bash
@@ -307,18 +307,18 @@ t6示例如何使用自定义的cmake模块(编写了自定义的FindHELLO.cmake
   ```
   上面的两条命令通常紧跟ADD\_EXECUTABLE和ADD\_LIBRARY,与其写在同一个CMakeLists.txt即可
 
-####cmake中如何增加编译选项
+#### cmake中如何增加编译选项
 使用变量CMAKE\_C\_FLAGS添加C编译选项
 使用变量CMAKE\_CXX\_FLAGS添加C++编译选项
 使用ADD\_DEFINITION添加
 
-####cmake中如何增加头文件路径
+#### cmake中如何增加头文件路径
 参考INCLUDE\_DIRECTORIES命令用法
 
-####cmake中如何在屏幕上打印信息
+#### cmake中如何在屏幕上打印信息
 参考MESSAGE用法
 
-####cmake中如何给变量赋值
+#### cmake中如何给变量赋值
 参考SET和AUX\_SOURCE\_DIRECTORY用法
 
 **建议**：在Project根目录先建立build,然后在build文件夹内运行cmake ..，这样就不会污染源代码, 如果不想要这些自动生成的文件了，只要简单的删除build文件夹就可以
