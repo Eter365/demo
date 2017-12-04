@@ -1,4 +1,4 @@
-####cmake中一些预定义变量
+#### cmake中一些预定义变量
 
 * PROJECT\_SOURCE\_DIR 工程的根目录
 * PROJECT\_BINARY\_DIR 运行cmake命令的目录,通常是${PROJECT\_SOURCE\_DIR}/build
@@ -33,9 +33,9 @@
 * CMAKE\_C\_FLAGS 设置C编译选项
 * CMAKE\_CXX\_FLAGS 设置C++编译选项
 
-####cmake常用命令
+#### cmake常用命令
 
-#####基本语法规则：
+##### 基本语法规则：
 
 * cmake变量使用${}方式取值,但是在IF控制语句中是直接使用变量名
 * 环境变量使用$ENV{}方式取值,使用SET(ENV{VAR} VALUE)赋值
@@ -49,7 +49,7 @@
 
 * 指令是大小写无关的,参数和变量是大小写相关的。推荐你全部使用**大写**指令。
 
-#####部分常用命令列表：
+##### 部分常用命令列表：
 
 * PROJECT
   PROJECT(projectname [CXX] [C] [Java])
